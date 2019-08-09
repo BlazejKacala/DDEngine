@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDEngine", "DDEngine\DDEngine.csproj", "{6F589742-EA25-43D2-813E-1E937F808D18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDEngineUnitTest", "DDEngineUnitTest\DDEngineUnitTest.csproj", "{EBA8B1CF-1115-4907-B574-331EBC52C1C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F589742-EA25-43D2-813E-1E937F808D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F589742-EA25-43D2-813E-1E937F808D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F589742-EA25-43D2-813E-1E937F808D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F589742-EA25-43D2-813E-1E937F808D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA8B1CF-1115-4907-B574-331EBC52C1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA8B1CF-1115-4907-B574-331EBC52C1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA8B1CF-1115-4907-B574-331EBC52C1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA8B1CF-1115-4907-B574-331EBC52C1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EBCF046-D1E9-4C87-8C3D-8286905BAB25}
+	EndGlobalSection
+EndGlobal
