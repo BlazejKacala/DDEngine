@@ -32,6 +32,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Collections.Specialized, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Specialized.4.3.0\lib\net46\System.Collections.Specialized.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,8 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="data\properties\Abilities.cs" />
+    <Compile Include="data\properties\Alignment.cs" />
+    <Compile Include="data\Character.cs" />
+    <Compile Include="data\properties\Size.cs" />
+    <Compile Include="engine\CharacterAdvancement.cs" />
+    <Compile Include="data\classes\CharacterClassWrapper.cs" />
+    <Compile Include="data\classes\CharacterClass.cs" />
+    <Compile Include="data\proficiencies\IProficiency.cs" />
+    <Compile Include="data\Skills.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
