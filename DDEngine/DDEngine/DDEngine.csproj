@@ -46,15 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="data\items\Inventory.cs" />
+    <Compile Include="data\items\Item.cs" />
+    <Compile Include="data\items\IUsable.cs" />
+    <Compile Include="data\items\wearable\Armor.cs" />
+    <Compile Include="data\items\wearable\armors\HeavyArmor.cs" />
+    <Compile Include="data\items\wearable\armors\MediumArmor.cs" />
+    <Compile Include="data\items\wearable\armors\LightArmor.cs" />
+    <Compile Include="data\items\wearable\Shield.cs" />
+    <Compile Include="data\items\wearable\Weapon.cs" />
     <Compile Include="data\properties\Abilities.cs" />
     <Compile Include="data\properties\Alignment.cs" />
     <Compile Include="data\Character.cs" />
+    <Compile Include="data\properties\Races.cs" />
     <Compile Include="data\properties\Size.cs" />
     <Compile Include="engine\CharacterAdvancement.cs" />
     <Compile Include="data\classes\CharacterClassWrapper.cs" />
     <Compile Include="data\classes\CharacterClass.cs" />
-    <Compile Include="data\proficiencies\IProficiency.cs" />
-    <Compile Include="data\Skills.cs" />
+    <Compile Include="data\proficiencies\Proficiency.cs" />
+    <Compile Include="engine\Dice.cs" />
+    <Compile Include="engine\IDice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

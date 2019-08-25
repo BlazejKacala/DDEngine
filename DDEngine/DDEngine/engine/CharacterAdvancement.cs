@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 namespace DDEngine.data
 {
 
-   
-
     public static class CharacterAdvancement
     {
 
@@ -35,12 +33,11 @@ namespace DDEngine.data
             { 19, 305000},
             { 20, 335000},
 
-
         };
 
-        public static bool isReadyToLvlUp(Character character)
+        public static bool IsReadyToLvlUp(Character character)
         {
-            character.XP
+            return character.XP > lvlProgression[character.CharacterClass.getLvl()];
         }
 
     }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDEngine.data
+namespace DDEngine.data.items
 {
-    class Skills
+    class Inventory
     {
     }
 }

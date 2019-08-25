@@ -13,7 +13,14 @@ namespace DDEngine.data.classes
  
         CharacterClassWrapper()
         {
-            classLvls = new List<ClassLvl>();
+            ClassLvls = new List<ClassLvl>();
+        }
+
+        public List<ClassLvl> ClassLvls { get => classLvls; set => classLvls = value; }
+
+        public int getLvl()
+        {
+            return ClassLvls.Sum(it => it.Lvls);
         }
         
     }
@@ -21,12 +28,12 @@ namespace DDEngine.data.classes
     public class ClassLvl
     {
 
-        public int lvls { get; set; }
-        public ClassType characterClass { get; set; }
+        public int Lvls { get; set; }
+        public ClassType CharacterClass { get; set; }
 
         public ClassLvl(int lvls, ClassType classType) {
-            this.lvls = lvls;
-            this.characterClass = classType;
+            this.Lvls = lvls;
+            this.CharacterClass = classType;
         }
     }
 }

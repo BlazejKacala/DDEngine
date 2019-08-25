@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDEngine", "DDEngine\DDEngine.csproj", "{6F589742-EA25-43D2-813E-1E937F808D18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDEngineUnitTest", "DDEngineUnitTest\DDEngineUnitTest.csproj", "{EBA8B1CF-1115-4907-B574-331EBC52C1C3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F589742-EA25-43D2-813E-1E937F808D18} = {6F589742-EA25-43D2-813E-1E937F808D18}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

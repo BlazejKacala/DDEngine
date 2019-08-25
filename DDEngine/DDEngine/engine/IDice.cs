@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDEngine.data.proficiencies
+namespace DDEngine.engine
 {
-    interface IProficiencies
+    public interface IDice
     {
+        int D { get; set; }
+
+        int Roll();
     }
 }

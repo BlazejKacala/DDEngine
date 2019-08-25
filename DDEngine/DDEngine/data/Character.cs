@@ -1,4 +1,5 @@
 ﻿using DDEngine.data.classes;
+using DDEngine.data.properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,13 @@ namespace DDEngine.data
 
         public string Name { get; set; }
 
-        public Alignment alignment { get; set; }
+        public Race Race { get; set; }
 
-        public CharacterClassWrapper characterClass { get; set; }
+        public Subrace Subrace { get; set; }
+
+        public Alignment Alignment { get; set; }
+
+        public CharacterClassWrapper CharacterClass { get; set; }
 
         public Abilities Abilities { get; set; }
 
