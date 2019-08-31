@@ -1,5 +1,6 @@
 ﻿using DDEngine.data.classes;
 using DDEngine.data.properties;
+using DDEngine.data.skills;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,8 @@ namespace DDEngine.data
         public CharacterClassWrapper CharacterClass { get; set; }
 
         public Abilities Abilities { get; set; }
+
+        public Skills Skills { get; set; }
 
         public int XP { get; set; }
 

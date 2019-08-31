@@ -37,7 +37,7 @@ namespace DDEngine.data
 
         public static bool IsReadyToLvlUp(Character character)
         {
-            return character.XP > lvlProgression[character.CharacterClass.getLvl()];
+            return character.XP > lvlProgression[character.CharacterClass.GetLvl()];
         }
 
     }

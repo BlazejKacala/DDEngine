@@ -55,17 +55,29 @@
     <Compile Include="data\items\wearable\armors\LightArmor.cs" />
     <Compile Include="data\items\wearable\Shield.cs" />
     <Compile Include="data\items\wearable\Weapon.cs" />
+    <Compile Include="data\items\wearable\weapons\WeaponDamage.cs" />
     <Compile Include="data\properties\Abilities.cs" />
     <Compile Include="data\properties\Alignment.cs" />
     <Compile Include="data\Character.cs" />
     <Compile Include="data\properties\Races.cs" />
     <Compile Include="data\properties\Size.cs" />
-    <Compile Include="engine\CharacterAdvancement.cs" />
+    <Compile Include="data\skills\ISkill.cs" />
+    <Compile Include="data\skills\Perception.cs" />
+    <Compile Include="data\skills\Skills.cs" />
+    <Compile Include="data\skills\Stealth.cs" />
+    <Compile Include="engine\Combat.cs" />
+    <Compile Include="engine\combat\SupriseChecker.cs" />
+    <Compile Include="engine\tables\AbilityScore.cs" />
+    <Compile Include="engine\tables\CharacterAdvancement.cs" />
     <Compile Include="data\classes\CharacterClassWrapper.cs" />
     <Compile Include="data\classes\CharacterClass.cs" />
     <Compile Include="data\proficiencies\Proficiency.cs" />
-    <Compile Include="engine\Dice.cs" />
-    <Compile Include="engine\IDice.cs" />
+    <Compile Include="engine\DamageType.cs" />
+    <Compile Include="engine\tools\Dice.cs" />
+    <Compile Include="engine\tools\IDice.cs" />
+    <Compile Include="engine\Battlefield.cs" />
+    <Compile Include="engine\tools\Player.cs" />
+    <Compile Include="engine\tools\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

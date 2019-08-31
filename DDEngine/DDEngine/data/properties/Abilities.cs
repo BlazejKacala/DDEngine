@@ -6,37 +6,90 @@ using System.Threading.Tasks;
 
 namespace DDEngine.data
 {
+
+    public enum Ability { Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma }
+
     public class Abilities
     {
 
+        private Dictionary<Ability, int> abilitiesDictionary = new Dictionary<Ability, int>();
+
         public int Strength
         {
-            get; set;
+            set
+            {
+                abilitiesDictionary[Ability.Strength] = value;
+            }
+
+            get
+            {
+                return abilitiesDictionary[Ability.Strength];
+            }
         }
 
         public int Dexterity
         {
-            get; set;
+            set
+            {
+                abilitiesDictionary[Ability.Dexterity] = value;
+            }
+
+            get
+            {
+                return abilitiesDictionary[Ability.Dexterity];
+            }
         }
 
         public int Constitution
         {
-            get; set;
+            set
+            {
+                abilitiesDictionary[Ability.Constitution] = value;
+            }
+
+            get
+            {
+                return abilitiesDictionary[Ability.Constitution];
+            }
         }
 
         public int Intelligence
         {
-            get; set;
+            set
+            {
+                abilitiesDictionary[Ability.Intelligence] = value;
+            }
+
+            get
+            {
+                return abilitiesDictionary[Ability.Intelligence];
+            }
         }
 
         public int Wisdom
         {
-            get; set;
+            set
+            {
+                abilitiesDictionary[Ability.Wisdom] = value;
+            }
+
+            get
+            {
+                return abilitiesDictionary[Ability.Wisdom];
+            }
         }
 
         public int Charisma
         {
-            get; set;
+            set
+            {
+                abilitiesDictionary[Ability.Charisma] = value;
+            }
+
+            get
+            {
+                return abilitiesDictionary[Ability.Charisma];
+            }
         }
 
     }

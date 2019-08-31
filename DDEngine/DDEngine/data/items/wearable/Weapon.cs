@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DDEngine.data.items.wearable.weapons;
 using DDEngine.data.proficiencies;
 
 namespace DDEngine.data.items.wearable
 {
-    class Weapon : Item, IUsable
+    public abstract class Weapon : Item, IUsable
     {
-        public List<Proficiency> Requirements => throw new NotImplementedException();
+        public abstract WeaponDamage GetBaseWeaponDamage();
+
+        public List<WeaponDamage> AdditionalDamage { get; set; }
+
+        public abstract List<Proficiency> Requirements { get; }
     }
 }

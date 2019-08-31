@@ -18,7 +18,7 @@ namespace DDEngine.data.classes
 
         public List<ClassLvl> ClassLvls { get => classLvls; set => classLvls = value; }
 
-        public int getLvl()
+        public int GetLvl()
         {
             return ClassLvls.Sum(it => it.Lvls);
         }
