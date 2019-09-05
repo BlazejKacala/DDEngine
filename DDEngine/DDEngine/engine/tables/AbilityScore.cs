@@ -1,4 +1,5 @@
 ﻿using DDEngine.data;
+using DDEngine.data.skills;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DDEngine.engine.tables
 {
-    class AbilityScore
+    static class AbilityScore
     {
         private static readonly Dictionary<int, int> basicAbilityScore = new Dictionary<int, int>() {
 
@@ -44,9 +45,47 @@ namespace DDEngine.engine.tables
 
         };
 
-        public int CalculateAbilityScore(Character character)
+        public static int CalculateAbilityScore(Character character, SkillType skillType)
         {
+            Ability ability = GetAbilityAssociatedWithSkillType(skillType);
+            return basicAbilityScore[character.Abilities.GetValue(ability)];
+        }
 
+        public static int CalculateAbilityScore(Character character, Ability ability)
+        {
+            return basicAbilityScore[character.Abilities.GetValue(ability)];
+        }
+
+        private static Ability GetAbilityAssociatedWithSkillType(SkillType skillType)
+        {
+            switch (skillType)
+            {
+                case SkillType.Athletics:
+                    return Ability.Strength;
+                case SkillType.Acrobatics:
+                case SkillType.SleightOfHand:
+                case SkillType.Stealth:
+                    return Ability.Dexterity;
+                case SkillType.AnimalHandling:
+                case SkillType.Insight:
+                case SkillType.Medicine:
+                case SkillType.Perception:
+                case SkillType.Survivial:
+                    return Ability.Wisdom;
+                case SkillType.Arcana:
+                case SkillType.History:
+                case SkillType.Investigation:
+                case SkillType.Nature:
+                case SkillType.Religion:
+                    return Ability.Intelligence;
+                case SkillType.Deception:
+                case SkillType.Intimidate:
+                case SkillType.Performance:
+                case SkillType.Persuasion:
+                    return Ability.Charisma;
+                default:
+                    throw new InvalidOperationException("Unknown skill type");
+            }
         }
     }
 }

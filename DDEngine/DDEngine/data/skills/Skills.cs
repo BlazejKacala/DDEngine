@@ -20,7 +20,5 @@ namespace DDEngine.data.skills
             skills[skillType] = value;
         }
 
-
-
     }
 }

@@ -14,6 +14,11 @@ namespace DDEngine.data
 
         private Dictionary<Ability, int> abilitiesDictionary = new Dictionary<Ability, int>();
 
+        public int GetValue(Ability ability)
+        {
+            return abilitiesDictionary[ability];
+        }
+
         public int Strength
         {
             set

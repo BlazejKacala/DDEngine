@@ -27,10 +27,4 @@ namespace DDEngine.data.skills
         Performance,
         Persuasion
     }
-
-    interface ISkill
-    {
-
-        Ability GetAbilityScore();
-    }
 }
