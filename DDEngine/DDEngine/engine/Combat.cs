@@ -47,7 +47,7 @@ namespace DDEngine.engine
                 opponentsSupriseCheckResult = supriseChecker.MakeSupriseCheck(combatParams.Battlefield.OppositeCharacters(), combatParams.Battlefield.PartyCharacters());
             }
 
-            actionQueue = ActionQueueCreator.MakeQueue(opponentsSupriseCheckResult ? combatParams.Battlefield.Party : null, 
+            actionQueue = QueueCreator.MakeQueue(opponentsSupriseCheckResult ? combatParams.Battlefield.Party : null, 
                 partySupriseCheckResult ? combatParams.Battlefield.Opponents : null, 
                 abilityChecker);
 

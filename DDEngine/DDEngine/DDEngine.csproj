@@ -72,7 +72,7 @@
     <Compile Include="data\classes\CharacterClass.cs" />
     <Compile Include="data\proficiencies\Proficiency.cs" />
     <Compile Include="engine\DamageType.cs" />
-    <Compile Include="engine\tools\ActionQueueCreator.cs" />
+    <Compile Include="engine\tools\QueueCreator.cs" />
     <Compile Include="engine\tools\Dice.cs" />
     <Compile Include="engine\tools\IDice.cs" />
     <Compile Include="engine\Battlefield.cs" />
