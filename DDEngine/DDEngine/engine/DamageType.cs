@@ -8,6 +8,6 @@ namespace DDEngine.engine
 {
     public enum DamageType
     {
-        Bludgegoing, Piercing, Slashing, Fire, Water, Cold, Electricity, Acid, Holy, Unholy, Magical
+        Acid, Bludgeoning, Cold, Fire, Force, Lightning, Necrotic, Piercing, Poison, Psychic, Radiant, Slashing, Thunder
     }
 }

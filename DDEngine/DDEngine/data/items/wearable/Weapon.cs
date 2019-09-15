@@ -15,5 +15,8 @@ namespace DDEngine.data.items.wearable
         public List<WeaponDamage> AdditionalDamage { get; set; }
 
         public abstract List<Proficiency> Requirements { get; }
+
+        public abstract WeaponProperties WeaponProperties { get; }
+
     }
 }

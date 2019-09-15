@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace DDEngine.data.properties
 {
-
-
     public enum Race
     {
         Dwarf,

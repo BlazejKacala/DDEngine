@@ -18,7 +18,7 @@ namespace DDEngineUnitTest
         public void TestQueueCreator()
         {
 
-
+             
             AbilityChecker abilityChecker = new AbilityChecker(new StableDice());
 
             List<Player> party = new List<Player>

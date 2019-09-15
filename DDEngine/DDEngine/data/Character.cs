@@ -11,7 +11,6 @@ namespace DDEngine.data
 {
     public class Character
     {
-
         public string Name { get; set; }
 
         public Race Race { get; set; }
@@ -26,13 +25,11 @@ namespace DDEngine.data
 
         public Skills Skills { get; set; }
 
+        public Conditions Conditions { get; set; }
+
         public int XP { get; set; }
 
         public int MaxHP { get; set; }
-
-        public int ArmorClass { get; set; }
-
-        public int Initiative { get; set; }
 
         public int Speed { get; set; }
 
