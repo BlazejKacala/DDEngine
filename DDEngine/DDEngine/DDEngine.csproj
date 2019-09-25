@@ -67,11 +67,14 @@
     <Compile Include="data\properties\Size.cs" />
     <Compile Include="data\skills\SkillType.cs" />
     <Compile Include="data\skills\Skills.cs" />
+    <Compile Include="data\state\Effects.cs" />
+    <Compile Include="data\state\effects\Blur.cs" />
     <Compile Include="data\state\State.cs" />
     <Compile Include="engine\action\Attack.cs" />
     <Compile Include="engine\action\IAction.cs" />
     <Compile Include="engine\Combat.cs" />
     <Compile Include="engine\combat\AbilityChecker.cs" />
+    <Compile Include="engine\combat\AcCalculator.cs" />
     <Compile Include="engine\combat\SupriseChecker.cs" />
     <Compile Include="engine\tables\AbilityScore.cs" />
     <Compile Include="engine\tables\CharacterAdvancement.cs" />

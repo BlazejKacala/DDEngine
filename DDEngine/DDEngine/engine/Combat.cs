@@ -58,8 +58,6 @@ namespace DDEngine.engine
             return actionQueue.First();
         }
 
-        public void PopNextPlayer
-
 
         public class CombatParams
         {

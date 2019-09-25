@@ -1,6 +1,7 @@
 ﻿using DDEngine.data.classes;
 using DDEngine.data.properties;
 using DDEngine.data.skills;
+using DDEngine.data.state;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace DDEngine.data
 
         public Skills Skills { get; set; }
 
-        public Conditions Conditions { get; set; }
+        public State State { get; set; }
 
         public int XP { get; set; }
 

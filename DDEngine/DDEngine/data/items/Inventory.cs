@@ -17,5 +17,7 @@ namespace DDEngine.data.items
         public Item LeftHand { set; get; }
 
         public Ammunition Quiver { set; get; }
+
+        public List<Item> Backpack { set; get; }
     }
 }

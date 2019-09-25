@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DDEngine.data.state
 {
-    class State
+    public class State
     {
         public Conditions Conditions { get; set; }
         public int HP { get; set; }
