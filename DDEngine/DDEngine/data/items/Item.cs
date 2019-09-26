@@ -12,6 +12,5 @@ namespace DDEngine.data.items
         public string Description { set; get; }
         public float Weight { set; get; }
         public int Price { set; get; }
-
     }
 }

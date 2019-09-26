@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using DDEngine.data.state.impacts;
 
 namespace DDEngine.data.state
 {
@@ -12,6 +9,8 @@ namespace DDEngine.data.state
         public long RemainingTime { get; set; }
 
         public Character Caster { get; set; }
+
+        public abstract List<IImpact> Impacts { get; }
     }
 
     class Effects

@@ -13,7 +13,7 @@ namespace DDEngine.data.properties
 
     public class Conditions
     {
-        private readonly List<Condition> conditions;
+        private readonly List<Condition> conditions = new List<Condition>();
 
         public void AddCondition(Condition condition)
         {

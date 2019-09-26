@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -89,10 +89,20 @@
     <Compile Include="engine\tools\Player.cs" />
     <Compile Include="engine\tools\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="engine\action\spells\Spell.cs" />
+    <Compile Include="engine\action\spells\MagicSchool.cs" />
+    <Compile Include="engine\action\spells\SpellType.cs" />
+    <Compile Include="engine\action\spells\SpellLvl.cs" />
+    <Compile Include="data\state\IImpact.cs" />
+    <Compile Include="data\state\impacts\ChangeHitChanceImpact.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="engine\action\spells\" />
+    <Folder Include="data\state\impacts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
