@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DDEngine.data.items
 {
-    class Inventory
+    public class Inventory
     {
         public Armor Armor { set; get; }
 

@@ -6,5 +6,5 @@ namespace DDEngine.data.state.impacts
         ImpactType GetType();
     }
 
-    public enum ImpactType { HitChance }
+    public enum ImpactType { HitChance, ArmorClassBonus }
 }

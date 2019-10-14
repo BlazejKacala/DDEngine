@@ -12,7 +12,7 @@ namespace DDEngine.data
     public class Abilities
     {
 
-        private Dictionary<Ability, int> abilitiesDictionary = new Dictionary<Ability, int>();
+        private readonly Dictionary<Ability, int> abilitiesDictionary = new Dictionary<Ability, int>();
 
         public int GetValue(Ability ability)
         {

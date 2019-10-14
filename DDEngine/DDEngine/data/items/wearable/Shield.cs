@@ -7,7 +7,7 @@ using DDEngine.data.proficiencies;
 
 namespace DDEngine.data.items.wearable
 {
-    class Shield : Item, IUsable
+    public class Shield : Item, IUsable
     {
         public int AcBonus { get; set; }
 

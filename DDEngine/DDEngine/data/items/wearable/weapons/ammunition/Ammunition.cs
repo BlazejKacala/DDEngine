@@ -11,7 +11,8 @@ namespace DDEngine.data.items.wearable.weapons.ammunition
     {
         Arrow, Bolt, Bullet
     }
-    class Ammunition
+
+    public class Ammunition
     {
         public WeaponDamage weapon;
 

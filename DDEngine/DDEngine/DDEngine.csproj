@@ -95,6 +95,8 @@
     <Compile Include="engine\action\spells\SpellLvl.cs" />
     <Compile Include="data\state\IImpact.cs" />
     <Compile Include="data\state\impacts\ChangeHitChanceImpact.cs" />
+    <Compile Include="data\state\impacts\ArmorClassBonusImpact.cs" />
+    <Compile Include="engine\tools\AcCalculator.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

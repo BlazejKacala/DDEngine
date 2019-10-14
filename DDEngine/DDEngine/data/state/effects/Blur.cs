@@ -9,6 +9,6 @@ namespace DDEngine.data.state.effects
 {
     public class Blur : Effect
     {
-        public override List<IImpact> Impacts { get => new List<IImpact> { ChangeHitChanceImpact(0.5f)}; }
+        public override List<IImpact> Impacts { get => new List<IImpact> { new ChangeHitChanceImpact(0.5f)}; }
     }
 }
