@@ -12,44 +12,41 @@ namespace DDEngine.engine
     {
         private CombatParams combatParams;
 
-        private SupriseChecker supriseChecker;
-
-        private AbilityChecker abilityChecker;
-
         private int round;
 
-        private List<Player> actionQueue = new List<Player>(); 
+        private List<Player> actionQueue = new List<Player>();
 
-        public void StartNewCombat(CombatParams combatParams, SupriseChecker supriseChecker, AbilityChecker abilityChecker)
+        private Toolset toolset;
+
+        public void StartNewCombat(CombatParams combatParams, Toolset toolset)
         {
             this.combatParams = combatParams;
-            this.supriseChecker = supriseChecker;
-            this.abilityChecker = abilityChecker;
+            this.toolset = toolset;
             round = 1;
         }
 
         public void StartNewRound()
         {
-            if(actionQueue.Count == 0)
+            if (actionQueue.Count == 0)
             {
                 throw new Exception("Previous round is not finished");
             }
 
             bool partySupriseCheckResult = false;
-            if(combatParams.IsPartyStealthy)
+            if (combatParams.IsPartyStealthy)
             {
-                partySupriseCheckResult = supriseChecker.MakeSupriseCheck(combatParams.Battlefield.PartyCharacters(), combatParams.Battlefield.OppositeCharacters());
+                partySupriseCheckResult = toolset.SupriseChecker.MakeSupriseCheck(combatParams.Battlefield.PartyCharacters(), combatParams.Battlefield.OppositeCharacters());
             }
 
             bool opponentsSupriseCheckResult = false;
             if (combatParams.AreOpponentsStealthy)
             {
-                opponentsSupriseCheckResult = supriseChecker.MakeSupriseCheck(combatParams.Battlefield.OppositeCharacters(), combatParams.Battlefield.PartyCharacters());
+                opponentsSupriseCheckResult = toolset.SupriseChecker.MakeSupriseCheck(combatParams.Battlefield.OppositeCharacters(), combatParams.Battlefield.PartyCharacters());
             }
 
-            actionQueue = QueueCreator.MakeQueue(opponentsSupriseCheckResult ? combatParams.Battlefield.Party : null, 
-                partySupriseCheckResult ? combatParams.Battlefield.Opponents : null, 
-                abilityChecker);
+            actionQueue = toolset.QueueCreator.MakeQueue(opponentsSupriseCheckResult ? combatParams.Battlefield.Party : null,
+                partySupriseCheckResult ? combatParams.Battlefield.Opponents : null,
+                toolset.AbilityChecker);
 
         }
 
