@@ -73,21 +73,22 @@
     <Compile Include="engine\action\Attack.cs" />
     <Compile Include="engine\action\IAction.cs" />
     <Compile Include="engine\Combat.cs" />
-    <Compile Include="engine\combat\AbilityChecker.cs" />
-    <Compile Include="engine\combat\AcCalculator.cs" />
-    <Compile Include="engine\combat\SupriseChecker.cs" />
+    <Compile Include="engine\tools\Toolset.cs" />
+    <Compile Include="engine\tools\combat\AbilityChecker.cs" />
+    <Compile Include="engine\tools\combat\AcCalculator.cs" />
+    <Compile Include="engine\tools\combat\SupriseChecker.cs" />
     <Compile Include="engine\tables\AbilityScore.cs" />
     <Compile Include="engine\tables\CharacterAdvancement.cs" />
     <Compile Include="data\classes\CharacterClassWrapper.cs" />
     <Compile Include="data\classes\CharacterClass.cs" />
     <Compile Include="data\proficiencies\Proficiency.cs" />
     <Compile Include="engine\DamageType.cs" />
-    <Compile Include="engine\tools\QueueCreator.cs" />
-    <Compile Include="engine\tools\Dice.cs" />
-    <Compile Include="engine\tools\IDice.cs" />
+    <Compile Include="engine\tools\combat\QueueCreator.cs" />
+    <Compile Include="engine\tools\dice\Dice.cs" />
+    <Compile Include="engine\tools\dice\IDice.cs" />
     <Compile Include="engine\Battlefield.cs" />
-    <Compile Include="engine\tools\Player.cs" />
-    <Compile Include="engine\tools\Point.cs" />
+    <Compile Include="engine\tools\misc\Player.cs" />
+    <Compile Include="engine\tools\misc\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="engine\action\spells\Spell.cs" />
     <Compile Include="engine\action\spells\MagicSchool.cs" />
@@ -96,7 +97,6 @@
     <Compile Include="data\state\IImpact.cs" />
     <Compile Include="data\state\impacts\ChangeHitChanceImpact.cs" />
     <Compile Include="data\state\impacts\ArmorClassBonusImpact.cs" />
-    <Compile Include="engine\tools\AcCalculator.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

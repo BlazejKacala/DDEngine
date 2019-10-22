@@ -13,7 +13,7 @@ namespace DDEngine.data.state
         public abstract List<IImpact> Impacts { get; }
     }
 
-    class Effects
+    public class Effects
     {
         private List<Effect> effects;
 
@@ -25,6 +25,11 @@ namespace DDEngine.data.state
         public void SetEffects(List<Effect> value)
         {
             effects = value;
+        }
+
+        public List<Effect> GetEffectsByImpactType(ImpactType impactTypeToFind)
+        {
+            return effects.FindAll((effect) => effect.Impacts.Exists((impactType) => impactType.GetType() == impactTypeToFind));
         }
 
     }
